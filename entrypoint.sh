@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 VERSION_LABEL=$1
 
