@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "1: $1";
+echo "2: $2";
+
 VERSION_LABEL=$1
 
 echo "VERSION LABEL: $VERSION_LABEL"
