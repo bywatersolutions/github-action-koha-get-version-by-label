@@ -1,5 +1,8 @@
 name: 'Koha Branch by Label'
 description: 'Returns the current branch name for a given Koha version label'
+branding:
+  icon: 'git-branch'
+  color: 'green'
 inputs:
   version-label:  # id of input
     description: 'The label of the branch you are looking for ( i.e. master, stable, oldstable )'
