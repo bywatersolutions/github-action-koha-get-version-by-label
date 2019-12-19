@@ -1,0 +1,14 @@
+name: 'Koha Branch by Label'
+description: 'Returns the current branch name for a given Koha version label'
+inputs:
+  version-label:  # id of input
+    description: 'The label of the branch you are looking for ( i.e. master, stable, oldstable )'
+    required: true
+outputs:
+  current-branch-name: # id of output
+    description: 'The name of the branch that currently matches the given version label ( e.g. master, 19.11.x, 19.05.x, etc... )'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version-label }}
