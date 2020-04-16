@@ -19,6 +19,22 @@ For example, if today is Dec 19, 2019, and I ask for 'stable', I will get back '
 If I ask for 'oldstable' I will get '19.05.x'.
 If I do that same thing in 6 months ( the release cycle length ), I will get back '20.05.x' and '19.11.x' respectively.
 
+### `branch-name`
+
+Same as `current-branch-name`
+
+### `version-major-minor`
+
+Major and minor version of Koha, e.g. `19.11`
+
+### `version-major`
+
+Major version of Koha, e.g. `19`
+
+### `version-minor`
+
+Minor version of Koha, e.g. `11`
+
 ## Example usage
 
 ```yaml
