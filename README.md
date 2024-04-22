@@ -7,7 +7,7 @@ This action returns the current Koha branch name for a given version label.
 ### `version-label`
 
 **Required** Label of the Koha branch you are looking for.
-The value can be one of `master`, `stable`, or `oldstable`.
+The value can be one of `main`, `stable`, or `oldstable`.
 
 ## Outputs
 
@@ -40,7 +40,7 @@ Minor version of Koha, e.g. `11`
 ```yaml
 - name: Get Koha Version Branch Name
   id: koha-version
-  uses: "bywatersolutions/github-action-koha-get-version-by-label@master"
+  uses: "bywatersolutions/github-action-koha-get-version-by-label@main"
   with:
     release-version: 'stable'
 ```

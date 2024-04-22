@@ -5,11 +5,11 @@ branding:
   color: 'green'
 inputs:
   version-label:  # id of input
-    description: 'The label of the branch you are looking for ( i.e. master, stable, oldstable )'
+    description: 'The label of the branch you are looking for ( i.e. main, stable, oldstable )'
     required: true
 outputs:
   current-branch-name: # id of output
-    description: 'The name of the branch that currently matches the given version label ( e.g. master, 19.11.x, 19.05.x, etc... )'
+    description: 'The name of the branch that currently matches the given version label ( e.g. main, 19.11.x, 19.05.x, etc... )'
   branch-name:
     description: 'same as current-branch-name'
   version-major-minor:

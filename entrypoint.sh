@@ -4,8 +4,8 @@ VERSION_LABEL=$1
 
 echo "VERSION LABEL: $VERSION_LABEL"
 
-if [[ "$VERSION_LABEL" == "master" ]]; then
-    KOHA_VERSION_BRANCH_NAME='master'
+if [[ "$VERSION_LABEL" == "main" ]]; then
+    KOHA_VERSION_BRANCH_NAME='main'
 elif [[ "$VERSION_LABEL" == "stable" ]]; then
     KOHA_VERSION_LINE=$(git ls-remote --heads https://github.com/Koha-Community/Koha.git | grep '[0-9]\{2\}\.[0-9]\{2\}\.x' | tac | sed '1q;d')
     echo "KOHA VERSION LINE: $KOHA_VERSION_LINE"
