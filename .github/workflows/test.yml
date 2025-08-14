@@ -2,7 +2,7 @@ name: Test Action
 
 on:
   push:
-    branches: [ main, fix-deprecated-set-output ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
