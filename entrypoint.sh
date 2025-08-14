@@ -28,8 +28,9 @@ echo "KOHA VERSION MAJOR MINOR: $KOHA_VERSION_MAJOR_MINOR"
 echo "KOHA VERSION MAJOR: $KOHA_VERSION_MAJOR"
 echo "KOHA VERSION MINOR: $KOHA_VERSION_MINOR"
 
-echo ::set-output name=current-branch-name::${KOHA_VERSION_BRANCH_NAME}
-echo ::set-output name=branch-name::${KOHA_VERSION_BRANCH_NAME}
-echo ::set-output name=version-major-minor::${KOHA_VERSION_MAJOR_MINOR}
-echo ::set-output name=version-major::${KOHA_VERSION_MAJOR}
-echo ::set-output name=version-minor::${KOHA_VERSION_MINOR}
+# Use modern GitHub Actions output syntax instead of deprecated ::set-output
+echo "current-branch-name=${KOHA_VERSION_BRANCH_NAME}" >> $GITHUB_OUTPUT
+echo "branch-name=${KOHA_VERSION_BRANCH_NAME}" >> $GITHUB_OUTPUT
+echo "version-major-minor=${KOHA_VERSION_MAJOR_MINOR}" >> $GITHUB_OUTPUT
+echo "version-major=${KOHA_VERSION_MAJOR}" >> $GITHUB_OUTPUT
+echo "version-minor=${KOHA_VERSION_MINOR}" >> $GITHUB_OUTPUT
